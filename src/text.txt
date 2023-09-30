@@ -1,0 +1,68 @@
+context api
+navbar - sticky  { complete page } 
+sidebar - clear all notes
+
+
+mobile-responsive
+{
+    query1:   size>(1155px) - no-change
+    query2:   phone-width (300px)
+    toggle -  not set custom
+}
+
+
+---------------------------------------------
+
+
+alert messages ( click the text-area to edit; deleted successfully; choose a color to create a note; )
+
+
+note - edit, title, clear, save, editor
+
+text editor
+
+note - details {tags, date, author, title, }
+
+
+category dropdowns ( to group notes )
+
+search query
+
+fliters - date, category
+
+folder structure
+
+dark mode ( logo-ok, )
+
+export and share
+
+
+sidepane ( for details, export, ... )
+
+
+Authentication
+
+backend database
+
+
+
+
+------------------------------------------
+concepts
+- context-api, states, routing
+
+
+
+
+
+Enhancements
+- use of backend database instead of local storage
+- 
+
+
+
+
+
+
+
+
