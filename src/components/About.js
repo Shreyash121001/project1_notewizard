@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from 'prop-types';
+// import { useNavigate } from 'react-router';
 
 export default function About() {
     let darkMode = {
@@ -35,7 +36,13 @@ export default function About() {
     }
     const [text, setText] = useState("Dark Mode");
     const [buttonStyle, setButton] = useState("btn btn-dark");
-    const [myStyle, setStyle] = useState(lightMode)
+    const [myStyle, setStyle] = useState(lightMode);
+
+    // const navigate = useNavigate();
+    // useEffect(() => {
+    //     localStorage.setItem('lastVisitedPage', '/about');
+    //   }, []);
+
     return (
         <>
             <div className='textform'>

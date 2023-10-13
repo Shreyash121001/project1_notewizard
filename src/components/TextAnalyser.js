@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './../App.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from 'prop-types';
+// import { useNavigate } from 'react-router';
 
 
 export default function TextAnalyser(props) {
@@ -38,6 +39,12 @@ export default function TextAnalyser(props) {
     const [text, setText] = useState('');
     // wrong way : text = "new text"; 
     // setText("New text");
+
+    // const navigate = useNavigate();
+    // useEffect(() => {
+    //     localStorage.setItem('lastVisitedPage', '/textanalyser');
+    //   }, []);
+
     return (
         <div className='textform'>
             

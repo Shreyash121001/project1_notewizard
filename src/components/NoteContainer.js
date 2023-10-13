@@ -6,7 +6,7 @@ import './NoteWizard.css';
 const NoteContainer = () => {
   // No props passed
 
-  const { notes, deleteNote, updateText } = useContext(NoteContext);
+  const { notes, deleteNote, updateText, openWhatsApp } = useContext(NoteContext);
 
     const reverseArray=(arr)=>{
         const array = []
@@ -22,7 +22,7 @@ const NoteContainer = () => {
       {/* <h2 style={{ textAlign: "center"}}>Notes</h2><br /> */}
       <div className="note-container_notes">
         {reverseArray(notes).length>0 ? reverseArray(notes).map((item) => (
-          <Note key={item.id} note={item} deleteNote={deleteNote} updateText={updateText} />
+          <Note key={item.id} note={item} deleteNote={deleteNote} updateText={updateText} openWhatsApp={openWhatsApp}/>
         )): <h5>No Notes present</h5>}
         <br/>
       </div>

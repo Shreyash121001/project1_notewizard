@@ -3,10 +3,16 @@ import NoteContainer from './NoteContainer'
 import Note from './Note'
 import Sidebar from './Sidebar'
 import { NoteContext } from './NoteContext';
+// import { useNavigate } from 'react-router';
 
 const NoteWizard = () => {
 
     const { notes, addNote, deleteNote, updateText, deleteAllNotes } = useContext(NoteContext);
+
+    // const navigate = useNavigate();
+    // useEffect(() => {
+    //     localStorage.setItem('lastVisitedPage', '/');
+    //   }, []);
 
     return (    
         <div className='NotesApp'>

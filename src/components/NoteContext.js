@@ -41,13 +41,20 @@ const NoteProvider = ({ children }) => {
         setNotes([]); // Clears all the notes by setting the state to an empty array
     };
 
+
+    const openWhatsApp = (text, id) => {
+        window.open('whatsapp://send?text=' + encodeURIComponent(text));
+      };
+
+
     // Create the context value
     const contextValue = {
         notes,
         addNote,
         deleteNote,
         updateText,
-        deleteAllNotes
+        deleteAllNotes,
+        openWhatsApp
     };
 
 
